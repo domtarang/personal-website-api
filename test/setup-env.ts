@@ -1,0 +1,10 @@
+process.env.NODE_ENV = 'test';
+process.env.DATABASE_URL ??= 'postgresql://postgres:postgres@127.0.0.1:5432/personal_website_test';
+process.env.ADMIN_BOOTSTRAP_USERNAME ??= 'admin';
+process.env.ADMIN_BOOTSTRAP_PASSWORD ??= 'test-password';
+process.env.CORS_ALLOWED_ORIGINS ??= 'http://localhost:5173,http://127.0.0.1:5173';
+process.env.REQUEST_BODY_LIMIT ??= '100kb';
+process.env.TRUST_PROXY ??= 'false';
+process.env.AUTH_RATE_LIMIT_WINDOW_MS ??= '60000';
+process.env.AUTH_RATE_LIMIT_MAX ??= '2';
+process.env.LOG_LEVEL ??= 'silent';

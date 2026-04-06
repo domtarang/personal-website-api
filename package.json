@@ -1,0 +1,47 @@
+{
+  "name": "personal-website-api",
+  "version": "3.0.1",
+  "description": "TypeScript Express API for my personal website",
+  "private": true,
+  "main": "dist/src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "tsx --import ./test/setup-env.ts --test test/**/*.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "migrate": "tsx src/scripts/migrate.ts up",
+    "migrate:status": "tsx src/scripts/migrate.ts status",
+    "migrate:create": "tsx src/scripts/create-migration.ts"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "api",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.3.2",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.23",
+    "@types/node": "^24.5.2",
+    "@types/pg": "^8.15.5",
+    "@types/supertest": "^7.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.3",
+    "supertest": "^7.2.2"
+  }
+}
