@@ -149,8 +149,8 @@ pm2 save
 - `GET /api/auth/session`
 - `POST /api/auth/logout`
 - `PUT /api/auth/password`
-- `GET /api/hero-section`
-- `PUT /api/hero-section`
+- `GET /api/portfolio-content`
+- `PUT /api/portfolio-content`
 
 ## Highlights
 
